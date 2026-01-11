@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "icon" href = "Media/checked.png"></link>
+    <title>ToDo</title>
+</head>
+<body>
+<header clas = "head">
+<i id = "todo"class="fa-solid fa-check-to-slot" style="color: #e01010;"></i>
+
+<h3 id = "title">ToDo<span id = "title-list">List</span></h3>
+
+</header>
+<div class = "image"><img src = "Media/image1.png"></div>
+
+<div class = "main">
+    <i id = "form-icon" class="fa-regular fa-square-check" style="color: #000000;"></i>
+    <div class = "content">
+    <h2>Log in To Your Account</h2>
+    <h3>Continue your tasks!</h3>
+     <form class = "loging">
+        <label for = "username">UserName</label>
+        <br>
+        <input type="text" id = "username" placeholder = "username">
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type = "password" id = "pass">
+        <br>
+        <button type="submit" id = "submit">LogIN</button>
+        <h3 id = message></h3>
+     </form>
+    </div>
+</div>
+  <div class = "message" id = "success">
+    <i class="fa-solid fa-circle-check" style="color: #fb4518;"></i>
+      <h2>Logged IN Successfully</h2>
+      
+      <button id = "gobtn">GO  :) </button>
+  </div>
+</body>
+</html>

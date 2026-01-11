@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+/*******************Header************************/
+.head{
+   
+    margin: 1% 0 0 1%;
+}
+#list{
+    color:#f55;
+    font-family: "Nunito", sans-serif;
+}
+#title{
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+/*************************************************/
+/********************Main*************************/
+.father{
+    
+    width:600px;
+    height:800px;
+    margin:0px auto;
+}
+.main{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    height:230px;
+    width:500px;
+    margin: 2%  auto;
+    border: 2px solid rgb(132, 128, 128);
+    border-radius: 1.5em;
+}
+.Head{
+    padding:15%;
+    color: aliceblue;
+
+}
+.Head>h2{
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+    font-size: 30px
+}
+.Head>h3{
+    font-family: "Nunito", sans-serif;
+    font-weight:lighter;
+    margin-left: 3%;
+    color: rgb(158, 159, 159);
+
+}
+/**************Todo items***************/
+.content{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+.circle{
+    margin: 7% 0 0 3%;
+    background-color: rgb(237, 90, 36);
+    border-radius: 50%;
+    height: 180px;
+    width:180px;
+    position: absolute;
+    top:-15px;
+    left:250px;
+}
+#score{
+    text-align: center;
+    margin-top: 40%;
+    font-size: 30px;
+    font-family: "Nunito", sans-serif;
+    color: black;
+}
+#add{
+    display: inline-block;
+    height:40px;
+    width: 255px;
+    margin-left: 25%;
+    text-align: center;
+    border-radius: 1.5em;
+    border: 2px solid rgb(132, 128, 128);
+    outline: none;
+    background-color: rgb(38, 36, 36);
+    
+}
+#submit{
+    margin:2% 0 0 3%;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    outline: none;
+    border-style: none;
+    background-color: rgb(237, 90, 36);
+    font-size: 20px;
+}
+.tasks{
+  margin:2% 5% 0 0;
+  list-style: none;
+}
+.tasks li{
+    position: relative;
+    height:50px;
+    width: 255px;
+    border: 2px solid rgb(132, 128, 128);
+    background-color:rgb(38, 36, 36);
+    margin-bottom: 3%;
+    
+}
+.icons{
+    position: absolute;
+    top:1px;
+    margin: 0 0 0 80%;
+    padding-bottom: 13%;
+    font-size: 30px;
+}
+.icons button{
+    background-color: transparent;
+    border: none;
+    transition: 0.3 ease; 
+}
+.icons button:hover{
+     transform: scale(1.07);
+}
+.check {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    margin:2.5% 0 0 1%;
+    border: 2px solid rgb(72, 67, 67);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative; 
+}
+.check:checked {
+  background-color: #4caf50; 
+  border-color: #4caf50;
+}
+.check:checked::after {
+  content: "✔";
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+ 
+}
+.check:checked +.task-text{
+    text-decoration: line-through 3px;
+
+}
+.task-text{
+    position: absolute;
+    top:25%;
+    left:20%;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    font-family: "Nunito", sans-serif;
+}
+.edit-input{
+    display: inline-block;
+    background-color:rgb(38, 36, 36);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    border-bottom: 2px solid;
+
+}
+
+/*
+   5,6,9,15,?,40
+
+   what is the missing 
+   element 🤔?
+
+*/ 

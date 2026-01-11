@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src = "mainscript.js" defer></script>
+    <link rel = "icon" href = "Media/checked.png"></link>
+    <title>ToDo</title>
+</head>
+<body>
+    <header class = "head">
+        <h2 id = "title">ToDo<span id = "list">List</span></h2>
+    </header>
+<div class = "father">
+    <div class = "main">
+        <div class = "Head">
+            <h2>Keep Going</h2>
+            <h3>Almost There</h3>
+
+            <div class = "circle">
+              <h3 id = "score"><span id = "done">0</span><span>/</span><span id = "total">total</span></h3>
+           </div>
+        </div>
+    </div>
+    <input id = "add" type="text" placeholder="write your next task"> 
+    <button id = "submit" type="submit"><i class="fa-solid fa-plus" style="color: #000000;"></i></button>
+ <div class = "content">
+    <ul class = "tasks" id = "taskadd">
+    </ul>
+ </div>   
+ </div>
+</body>
+</html>

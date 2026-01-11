@@ -1,0 +1,160 @@
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+@keyframes animate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+body{
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+}
+/***************Header*************/
+#todo{
+   margin: 15px 0px 0px 10px;
+   font-size: 30px;
+   
+}
+ #title{
+    display: inline;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+}
+#title-list{
+    color:hsl(0 73.7% 41.8%);
+}
+/********************************************************************/
+/****************Main***************/
+.image{
+    position: relative;
+    margin-left: 15%;
+}
+.main{
+    background-color: rgb(240, 85, 50);
+    width:30%;
+    margin-left: 60%;
+    height:90vh;
+    border-radius: 5%;
+    padding:3% 0 0 3%;
+    position: absolute;
+    top:5%;
+}
+#form-icon{
+    font-size: 40px;
+    transition: 0.3 ease; 
+}
+#form-icon:hover{
+   transform: scale(1.09);
+}
+
+.content{
+    /*background-color: rgb(4, 25, 43);*/
+    margin:15% 0 0 10%;
+}
+.content>h2{
+    font-size: 30px;
+}
+.content>h3{
+    font-size: 20px;
+    margin: 1% 0 0 15%;
+    color:white;
+}
+.loging{
+    margin-top: 15%;
+}
+.loging>label{
+    display: inline-block;
+    margin:3% 0 2% 2%;
+    font-size: 23px;
+    font-weight: bolder;
+    
+}
+.loging>input{
+    display: inline-block;
+    height: 35px;
+    width: 250px;
+    border-radius: 1.5em;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    transition:  0.3 ease; 
+    text-align: center;
+}
+input:focus{
+  box-shadow: 0 0 15px rgba(137, 112, 112, 0.7);
+  border-color: rgb(78, 9, 9);
+  transform: scale(1.04);
+}
+.loging>button{
+    height: 50px;
+    width: 210px;
+    margin: 8% 7% 0 6%;
+    background-color: rgb(154, 54, 18);
+    font-size: 17px;
+    font-weight: bolder;
+    color:aliceblue;
+    border-radius: 1.3em;
+    border:2px;
+    outline:invert;
+   box-shadow: 0 0 15px rgba(137, 112, 112, 0.3);
+}
+#message{
+    margin: 3% 0 0 7%;
+    text-align: center;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 200;
+}
+button:hover{
+    transform: scale(1.07);
+    border-color: rgb(78, 9, 9);
+}
+.message{
+    width:300px;
+    height: 200px;
+    background-color: rgb(154, 54, 18);
+    border-radius: 6px;
+    position: absolute;
+    top:0;
+    left:30%;
+    transform: translate((-50% , -50%)) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility: hidden;
+    transition: 0.4s ease;
+}
+.message > i{
+    font-size: 80px;
+    margin-top:-50px;
+    box-shadow:  rgba(0 , 0 , 0 , 0.2);
+}
+.message h2{
+    font-size: 38px;
+    font-weight: 500;
+    color:white;
+}
+.message button{
+    margin-top: 40px;
+    width:150px;
+    height:30px;
+    border-radius: 1.3em;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight:bolder;
+    background-color: rgb(255, 255, 255);
+     
+}
+.message.show{
+  top: 50%;
+  left:40%;
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+}
